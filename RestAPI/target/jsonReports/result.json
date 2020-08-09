@@ -1,0 +1,406 @@
+[
+  {
+    "line": 19,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-03T21:03:57.818Z",
+        "line": 32,
+        "name": "Place given is added",
+        "description": "",
+        "id": "add-place-api;place-given-is-added;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1115186000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Payload for adding place with \"House_A1\", \"English\", \"random_Address Abc1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"House_A1\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"random_Address Abc1\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.payload_for_adding_place_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2492809300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User calls \"AddPlace\" API with \"post\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlace\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_api_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2227800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "statusCode returned is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.status_code_returned_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11526300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "\"status\" in response is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24640400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "\"scope\" in response is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 789007000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "verify place_id created maps to \"House_A1\" using \"get\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"House_A1\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"get\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.verify_place_id_created_maps_to_using_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-03T21:04:02.334Z",
+        "line": 33,
+        "name": "Place given is added",
+        "description": "",
+        "id": "add-place-api;place-given-is-added;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Payload for adding place with \"House_A2\", \"Hindi\", \"random_address Abc2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"House_A2\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"Hindi\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"random_address Abc2\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.payload_for_adding_place_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 358049900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User calls \"AddPlace\" API with \"post\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlace\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_api_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "statusCode returned is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.status_code_returned_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17321400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "\"status\" in response is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11466100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "\"scope\" in response is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 649214500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "verify place_id created maps to \"House_A2\" using \"get\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"House_A2\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"get\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.verify_place_id_created_maps_to_using_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-03T21:04:03.377Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeAction()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "place given is deleted",
+        "description": "",
+        "id": "add-place-api;place-given-is-deleted",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Payload for deleting place",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.payload_for_deleting_place()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 563033200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User calls \"DeletePlace\" API with \"delete\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlace\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"delete\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_api_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "statusCode returned is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.status_code_returned_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11389800,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "\"status\" in response is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Add Place API",
+    "description": "",
+    "id": "add-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PlaceApiValidations.feature",
+    "tags": []
+  }
+]
