@@ -20,7 +20,7 @@ public class Base {
 	protected TestDataBuild testData=new TestDataBuild();
 	
 	public RequestSpecification createRequestSpecForAddPlaceApi() throws IOException {		
-		PrintStream stream=new PrintStream(new File(ReadPropertiesFiles.getPropertyFromGlobalFile("loggerFile")));
+		PrintStream stream=new PrintStream(new File(ReadPropertiesFiles.getPropertyFromGlobalFile("loggerFileAddPlace")));
 		return new RequestSpecBuilder().addQueryParam("key", "qaclick123").setAccept(ContentType.JSON)
 				.setBaseUri(ReadPropertiesFiles.getPropertyFromGlobalFile("baseURIAddPlaceApi"))
 				.addFilter(RequestLoggingFilter.logRequestTo(stream))
@@ -30,6 +30,20 @@ public class Base {
 	}
 	
 	public ResponseSpecification createResponseSpecForAddPlaceApi() {
+		return new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
+		
+	}
+	
+	public RequestSpecification createRequestSpecForLibraryApi() throws IOException {		
+		PrintStream stream=new PrintStream(new File(ReadPropertiesFiles.getPropertyFromGlobalFile("loggerFileLibraryApi")));
+		return new RequestSpecBuilder().setAccept(ContentType.JSON)
+				.setBaseUri(ReadPropertiesFiles.getPropertyFromGlobalFile("baseURILibraryApi"))
+				.addFilter(RequestLoggingFilter.logRequestTo(stream))
+				.addFilter(ResponseLoggingFilter.logResponseTo(stream))
+				.build();		
+	}
+	
+	public ResponseSpecification createResponseSpecForLibraryApi() {
 		return new ResponseSpecBuilder().expectContentType(ContentType.JSON).build();
 		
 	}

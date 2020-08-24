@@ -1,9 +1,102 @@
 [
   {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-23T20:01:04.856Z",
+        "line": 23,
+        "name": "Add a book",
+        "description": "",
+        "id": "library-api;add-a-book",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4294300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Details for adding a book",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionLibrary.details_for_adding_a_book()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user calls \"POST\" request on \"AddBook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"AddBook\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionLibrary.user_calls_request_on(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "status should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionLibrary.status_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "\"msg\" should be \"successfully added\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"successfully added\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionLibrary.should_be(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Library API",
+    "description": "",
+    "id": "library-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/LibraryApiValidations.feature",
+    "tags": []
+  },
+  {
     "line": 19,
     "elements": [
       {
-        "start_timestamp": "2020-08-03T21:03:57.818Z",
+        "start_timestamp": "2020-08-23T20:01:04.999Z",
         "line": 32,
         "name": "Place given is added",
         "description": "",
@@ -13,7 +106,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1115186000,
+              "duration": 1406826500,
               "status": "passed"
             },
             "line": 23,
@@ -39,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 2492809300,
+              "duration": 3259279500,
               "status": "passed"
             },
             "line": 24,
@@ -61,7 +154,7 @@
           },
           {
             "result": {
-              "duration": 2227800,
+              "duration": 2804300,
               "status": "passed"
             },
             "line": 25,
@@ -79,7 +172,7 @@
           },
           {
             "result": {
-              "duration": 11526300,
+              "duration": 32281000,
               "status": "passed"
             },
             "line": 26,
@@ -101,7 +194,7 @@
           },
           {
             "result": {
-              "duration": 24640400,
+              "duration": 16632100,
               "status": "passed"
             },
             "line": 27,
@@ -123,7 +216,7 @@
           },
           {
             "result": {
-              "duration": 789007000,
+              "duration": 1655003500,
               "status": "passed"
             },
             "line": 28,
@@ -151,7 +244,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-08-03T21:04:02.334Z",
+        "start_timestamp": "2020-08-23T20:01:11.386Z",
         "line": 33,
         "name": "Place given is added",
         "description": "",
@@ -186,7 +279,7 @@
           },
           {
             "result": {
-              "duration": 358049900,
+              "duration": 306610600,
               "status": "passed"
             },
             "line": 24,
@@ -208,6 +301,7 @@
           },
           {
             "result": {
+              "duration": 235900,
               "status": "passed"
             },
             "line": 25,
@@ -225,7 +319,7 @@
           },
           {
             "result": {
-              "duration": 17321400,
+              "duration": 22012100,
               "status": "passed"
             },
             "line": 26,
@@ -247,7 +341,7 @@
           },
           {
             "result": {
-              "duration": 11466100,
+              "duration": 15579300,
               "status": "passed"
             },
             "line": 27,
@@ -269,7 +363,7 @@
           },
           {
             "result": {
-              "duration": 649214500,
+              "duration": 1585089900,
               "status": "passed"
             },
             "line": 28,
@@ -297,11 +391,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-08-03T21:04:03.377Z",
+        "start_timestamp": "2020-08-23T20:01:13.324Z",
         "before": [
           {
             "result": {
-              "duration": 997600,
+              "duration": 997800,
               "status": "passed"
             },
             "match": {
@@ -318,6 +412,7 @@
         "steps": [
           {
             "result": {
+              "duration": 456100,
               "status": "passed"
             },
             "line": 37,
@@ -329,7 +424,7 @@
           },
           {
             "result": {
-              "duration": 563033200,
+              "duration": 1715058700,
               "status": "passed"
             },
             "line": 38,
@@ -368,7 +463,7 @@
           },
           {
             "result": {
-              "duration": 11389800,
+              "duration": 14586000,
               "status": "passed"
             },
             "line": 40,
